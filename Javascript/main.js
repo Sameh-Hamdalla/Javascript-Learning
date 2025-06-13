@@ -143,8 +143,48 @@
 // }
 // #######################################################
 
+// for Loop:
 
+// console.log("hallo world")
+// console.log("hallo world")
+// console.log("hallo world")
 
+// start, condition, steps
+
+// for (let i = 0; i < 4 ; i+=1 ) {
+//     console.log("Hallo world");
+//     console.log("Hallo ");   
+// 
+
+// for (let i = 10; i >= 0 ; i-=2 ) {
+
+//     console.log(i);
+
+// // }
+
+// for (let i = 0; i < 4; i ++ ) {
+//    console.log("Ahmed " + i);
+    
+// }
+
+// #######################################################
+
+// let names = [ "Ahmed", "Mazaen", "Ali", "Gamal"]
+
+// // console.log(names[0])
+// // console.log(names[1])
+// // console.log(names[2])
+// // console.log(names[3])
+
+// for (let i = 0; i < names.length; i++) {
+//     console.log(names[i]);
+// }
+
+let x = "Ahmed";
+
+for (let i = 0; i < x.length; i++) {
+    console.log(x[i]);
+}
 
 
 
