@@ -180,12 +180,42 @@
 //     console.log(names[i]);
 // }
 
-let x = "Ahmed";
+// let x = "Ahmed";
 
-for (let i = 0; i < x.length; i++) {
-    console.log(x[i]);
+// for (let i = 0; i < x.length; i++) {
+//     console.log(x[i]);
+// }
+// #######################################################
+//  Nasted Loop
+// Ein Array mit Automarken
+let cars = ["BMW", "Mercedes", "Honda"];
+
+// Ein Array mit Modelljahren
+let models = [2020, 2021, 2022];
+
+// Ein Array mit Farben
+let colors = ["blacks", "white", "red"];
+
+// Äußere Schleife: Durchläuft jede Automarke im Array "cars"
+for (let i = 0; i < cars.length; i++) {
+    // Gibt die aktuelle Automarke aus
+    console.log(`cars : ${cars[i]}`);
+
+    // Innere Schleife 1: Durchläuft jedes Modelljahr im Array "models"
+    for (let j = 0; j < models.length; j++) {
+        // Gibt das aktuelle Modelljahr aus
+        console.log(`models : ${models[j]}`);
+    }
+
+    // Innere Schleife 2: Durchläuft jede Farbe im Array "colors"
+    for (let x = 0; x < colors.length; x++) {
+        // Gibt die aktuelle Farbe aus
+        console.log(`colors : ${colors[x]}`);
+    }
+
+    // Trennt die Ausgabe für jede Automarke optisch
+    console.log("_____________");
 }
-
 
 
 
