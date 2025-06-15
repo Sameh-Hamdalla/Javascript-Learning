@@ -217,5 +217,65 @@ for (let i = 0; i < cars.length; i++) {
     console.log("_____________");
 }
 
+// #######################################################
+
+// loop break / continue
+
+// let users =["ali", "mazen", "gamal",1,2,3,46,"oday", "yousef", "ahmed" ]
+
+// for (let i = 0; i < users.length; i++) {
+
+//     if (typeof users[i] == "number"){
+
+//         continue;
+//     }
+//         if (users[i] == "mazen") {
+
+//             continue;
+//         }
+//         if (users[i] == "ahmed" ) {
+
+//             break;
+            
+//         }
+//     console.log(users[i])
+    
+// }
+
+// #######################################################
+
+// while loop und dowhile
+
+// Beispiel mit while-Schleife
+// let i = 0;
+
+// Die while-Schleife prüft die Bedingung VOR der Ausführung
+// Solange i kleiner als 3 ist, wird der Block ausgeführt
+// Wenn die Bedingung am Anfang falsch ist, wird der Code NICHT ausgeführt
+// while (i < 3) {
+//     document.write("<h1> hello world </h1>");
+//     i++;
+// }
+
+// Beispiel mit do...while-Schleife
+let x = 0;
+
+// Die do...while-Schleife führt den Block mindestens EINMAL aus,
+// auch wenn die Bedingung am Ende falsch ist
+do {
+    document.write("<h1> hello world </h1>");
+    x++;
+} while (x < 3); // Bedingung wird erst NACH der ersten Ausführung geprüft
+
+
+let x = 5; // x bekommt den Wert 5
+
+// Die Schleife wird mindestens einmal ausgeführt,
+// auch wenn die Bedingung unten falsch ist
+do {
+    document.write("<h1> hello world </h1>");
+    // x wird nicht verändert, bleibt 5
+} while (x < 3); // Bedingung ist falsch (5 < 3), also keine weitere Wiederholung
+
 
 
