@@ -409,21 +409,21 @@
 
 //  Lokale Variable
 // Wird mit let oder const innerhalb einer Funktion oder eines Blocks {} deklarier, Ist nur innerhalb dieses Blocks sichtbar
-function hallo() {
-  let name = "Ali";  // lokale Variable
-  console.log(name);
-}
+// function hallo() {
+//   let name = "Ali";  // lokale Variable
+//   console.log(name);
+// }
 // #######################################
 
 //  Globale Variable
 // Ist im gesamten Skript verfügbar
 // var außerhalb einer Funktion erzeugt auch eine globale Variable
 
-var sprache = "JavaScript";  // globale Variable
+// var sprache = "JavaScript";  // globale Variable
 
-function zeigen() {
-  console.log(sprache);
-}
+// function zeigen() {
+//   console.log(sprache);
+// }
 
 // #######################################
 
@@ -472,7 +472,219 @@ function zeigen() {
 // console.log(x())
 
 // Umwandlung in eine Pfeilfunktion (Arrow Function)
-let x = () => 1;  // Arrow Function gibt direkt 1 zurück
+// let x = () => 1;  // Arrow Function gibt direkt 1 zurück
 
-console.log(x());  // Ausgabe: 1
+// console.log(x());  // Ausgabe: 1
 
+// #######################################
+
+// Ein Objekt mit dem Namen "car"
+// let car = {
+//   title: "BMW",              // Titel oder Marke des Autos
+//   price : 500000,            // Preis des Autos
+//   color: ["white", "black"], // Verfügbare Farben (als Array)
+//   model: 2020,               // Baujahr des Autos
+
+//   // Eine Methode (Funktion) innerhalb des Objekts
+//   hallo: function() {
+//     return "hallo";          // Gibt einfach "hallo" zurück
+//   }
+// };
+
+// Zugriff auf die Eigenschaften und Methode
+// console.log(car.color[0]);   // Gibt "white" aus
+// console.log(car.title);      // Gibt "BMW" aus
+// console.log(car.price);      // Gibt 500000 aus
+// console.log(car.model);      // Gibt 2020 aus
+// console.log(car.hallo());      // G
+
+// #######################################
+// // nasted Object
+// let user = {
+//   // Eigenschaften des Objekts (properties)
+//   firstName: "Abedlerahamn",     // Vorname
+//   lastName: "Gamal",             // Nachname
+//   email: "sa_mh87@outlook.de",   // E-Mail-Adresse
+//   age: 26,                       // Alter
+//   skills: ["html", "CSS", "Python"], // Liste der Fähigkeiten
+//   aktive: true,                  // Ist der Benutzer aktiv?
+
+//   // Verschachteltes Objekt (nested object) für Telefonnummern
+//   phonNumber: {
+//     first: "0122545465468",      // Erste Telefonnummer
+//     scond: "0402165340316",      // Zweite Telefonnummer (Tippfehler: "scond" sollte "second" sein)
+//   },
+
+//   // Verschachteltes Objekt für Adressen
+//   adresse: {
+//     Egypt: "Kairo",              // Adresse in Ägypten
+//     Germany: "Wutach"            // Adresse in Deutschland
+//   },
+
+//   // Methode zur Prüfung, ob der Benutzer aktiv ist
+//   isActive: function () {
+//     if (user.aktive === true) {
+//       return "Hallo User";       // Gibt Begrüßung zurück, wenn aktiv
+//     } else {
+//       return "sorry you are not aktive"; // Gibt Fehlermeldung zurück, wenn nicht aktiv
+//     }
+//   },
+
+//   // Methode zur Altersprüfung
+//   getAge: function () {
+//     if (user.age >= 18) {
+//       return "available";        // Benutzer ist volljährig
+//     } else {
+//       return "unavailable";      // Benutzer ist nicht volljährig
+//     }
+//   }
+// };
+
+// // ---- Ausgabe / Zugriff auf Daten ----
+
+// console.log(user.firstName);             // Gibt den Vornamen aus
+// console.log(user.phonNumber.first);      // Gibt die erste Telefonnummer aus (aus dem verschachtelten Objekt)
+// console.log(user.getAge.name);           // Gibt den Namen der Funktion "getAge" als String zurück
+// console.log(user["phonNumber"]["first"]) // Alternative Zugriffsschreibweise auf verschachtelte Objekte
+
+// console.log(user.isActive);              // Gibt die Funktion selbst zurück (nicht das Ergebnis)
+// console.log(user["getAge"]());           // Führt die Funktion aus und gibt das Ergebnis zurück
+
+// #######################################
+// create object:
+
+// let user = {
+//   name: "Sameh"          // Eigenschaft 'name' mit dem Wert "Sameh"
+// };
+
+// user["age"] = 25;        // Fügt eine neue Eigenschaft 'age' mit dem Wert 25 hinzu (über eckige Klammernotation)
+// console.log(user.name);  // Ausgabe: Sameh
+
+// user.name = "Ahmed";     // Überschreibt die bestehende Eigenschaft 'name' mit dem neuen Wert "Ahmed"
+// console.log(user.name);  // Ausgabe: Ahmed
+
+// console.log(user.age);   // Ausgabe: 25
+
+// // Fügt eine Methode (Funktion) dem Objekt hinzu
+// user.hello = function () {
+//   return "hallo";
+// }
+// console.log(user.hello()); // Ausgabe: hallo
+
+
+
+// let product = new Number();  // Erstellt ein Objekt vom Typ Number (nicht der primitive Wert!)
+// let product2 = new String(); // Erstellt ein Objekt vom Typ String
+// let product3 = new Object(); // Erstellt ein generisches Objekt
+
+// product.title = "Mensch";    // Fügt dem Number-Objekt eine Eigenschaft 'title' hinzu
+
+// console.log(product);        // Zeigt das Number-Objekt mit zusätzlicher Eigenschaft
+// console.log(product2);       // Zeigt das String-Objekt (leer, weil kein Text übergeben wurde)
+// console.log(product3);       // Zeigt ein leeres Objekt {}
+// console.log(product.title);  // Ausgabe: Mensch
+
+// ################################################################
+//this 
+
+// // Objekt mit Methode, die 'this' verwendet
+// let user = {
+//   name: "AbedelRahaman",
+
+//   getName: function () {
+//     return this.name;   // 'this' verweist hier auf das aktuelle Objekt 'user'
+//   }
+// }
+// console.log(user.getName());  // Ausgabe: AbedelRahaman
+
+
+// // Zugriff auf das globale Objekt mit 'this'
+// let x = this; // Im globalen Kontext (außerhalb von Funktionen) ist 'this' === window (im Browser)
+
+// // Öffnet ein Alert-Fenster im Browser (nur im Browser sichtbar)
+// // Achtung: funktioniert **nicht** in Node.js oder außerhalb des Browsers!
+// this.alert("Hallo Yallllllllaaaaaaaaaaaaa")
+
+// console.log(x == window); // Ausgabe: true (im Browser)
+
+
+// // "use strict";
+// // Verwendung von "use strict" aktiviert den strikten Modus
+// "use strict";
+
+// // Strikter Modus verhindert, dass man versehentlich globale Variablen erstellt
+// // x = 10;  // ❌ Würde einen Fehler verursachen, weil 'x' nicht deklariert wurde
+// // console.log(x)
+
+// // //  x = 10;
+// // // console.log(x)
+
+// // Achtung: Fehler in der Parameterliste! Beide Parameter heißen 'num1'
+// // JavaScript lässt das zwar zu, aber es ist schlecht und führt zu unerwartetem Verhalten
+
+// function calc(num1, num1) {
+//   return "Hallo"; // Gibt einfach nur "Hallo" zurück, unabhängig von Eingaben
+// }
+// console.log(calc()); // Ausgabe: "Hallo"
+
+// ################################################################
+
+
+let user = {
+  name: "AbedelRahaman",
+
+  getName: function () {
+    return `Hallo ${user.name}`; // ❗ Hier wird direkt auf 'user.name' zugegriffen, NICHT auf 'this.name'
+  }
+}
+
+
+let user2 = Object.create(user); // Erstellt ein neues Objekt 'user2', das von 'user' erbt (Prototype-Vererbung)
+
+
+console.log(user2.name);
+// Ausgabe: "AbedelRahaman"
+// Warum? Weil 'user2' keinen eigenen 'name'-Wert hat → also wird der 'name' vom Prototypen (user) verwendet
+
+user2.name = "Ali";  // Jetzt hat 'user2' einen eigenen 'name'-Wert (überschreibt den geerbten)
+user2.age = 30;       // Fügt eine neue Eigenschaft 'age' zu 'user2' hinzu
+
+console.log(user2.getName());
+// Ausgabe: "Hallo AbedelRahaman"
+// ❗ Warum nicht "Hallo Ali"? Weil in der Methode `getName()` folgendes steht:
+// `return "Hallo " + user.name` → es wird IMMER auf das Objekt `user` verwiesen, nicht auf `this`
+// 🔧 Lösung wäre: `return "Hallo " + this.name`
+
+console.log(user2.name);
+// Ausgabe: "Ali" (weil eigene Eigenschaft von 'user2')
+
+console.log(user.name);
+// Ausgabe: "AbedelRahaman" (nicht verändert)
+
+console.log(user2.age);
+// Ausgabe: 30 (Eigenschaft gehört nur zu 'user2')
+
+// ################################################################
+
+// assign
+// Drei separate Objekte
+let a1 = {
+  num1: 1
+}
+let a2 = {
+  num2: 2
+}
+let a3 = {
+  num3: 3
+}
+
+// Object.assign kopiert alle Eigenschaften von a2, a3 und dem letzten Objekt
+// in das erste Objekt (a1), und gibt dieses aktualisierte Objekt zurück.
+let a4 = Object.assign(a1, a2, a3, {
+  num4: 4
+});
+
+a4.num1 = 10;  // Überschreibt num1 in a4 (also auch in a1)
+a4.r = 100;    // Fügt neue Eigenschaft hinzu
+
+console.log(a4)
