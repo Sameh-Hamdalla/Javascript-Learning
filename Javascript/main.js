@@ -1281,3 +1281,165 @@
 //     cursor: pointer;
 //     border: 5px solid #080; 
 // }
+
+// #############################################
+// BOM
+
+// window
+// document.write('hallo<br>')
+// window.document.write('hallo')
+// window.console.log('hallo');
+// #######
+// function hallo (){
+//     console.log('Hallo')
+// }
+// window.hallo()
+// hallo()
+// #######
+// let hallo = function () {
+//    console.log('hallo');  
+// }
+// hallo()
+
+// #############################################################
+// scroll
+// Den Button mit der ID "btn" aus dem Dokument holen
+// let btn = document.getElementById('btn');
+
+// // Wenn der Benutzer auf der Seite scrollt
+// window.onscroll = function () {
+//   // Wenn der Scrollwert 400 Pixel oder mehr beträgt
+//   if (scrollY >= 400) {
+//     // Den Button sichtbar machen
+//     btn.style.display = 'block';
+//   } else {
+//     // Den Button ausblenden
+//     btn.style.display = 'none';
+//   }
+// }
+
+// // Wenn der Benutzer auf den Button klickt
+// btn.onclick = function () {
+//   // Zurück nach oben scrollen (mit sanfter Animation)
+//   scroll({
+//     left: 0,
+//     top: 0,
+//     behavior: "smooth"
+//   });
+// }
+// #############################################################
+// window screen
+
+// // Gibt die volle Breite des Bildschirms in Pixeln zurück
+// console.log(screen.width);
+
+// // Gibt die verfügbare Breite (ohne Taskleiste etc.) zurück
+// console.log(screen.availWidth);
+
+// // Gibt die volle Höhe des Bildschirms in Pixeln zurück
+// console.log(screen.height);
+
+// // Gibt die verfügbare Höhe (ohne z. B. Browserleiste) zurück
+// console.log(screen.availHeight);
+
+// // Gibt die Farbtiefe des Bildschirms zurück (z. B. 24 oder 32 Bit)
+// console.log(screen.colorDepth);
+
+// // Gibt die Pixeltiefe zurück (meist gleich wie colorDepth)
+// console.log(screen.pixelDepth);
+
+// // Gibt das Orientierungsobjekt des Bildschirms zurück (z. B. landscape oder portrait)
+// console.log(screen.orientation);
+
+// // Gibt den Typ der Bildschirmausrichtung zurück (z. B. "landscape-primary")
+// console.log(screen.orientation.type);
+
+// #############################################################
+
+// Location Object
+// https://www.instagram.com/abdelrahman_noufal/ == href
+// https: == protocol
+// www.instagram.com == host name
+// /abdelrahman_noufal/ == path name
+// console.log(location.href);       // Gibt die vollständige URL der aktuellen Seite aus
+// console.log(location.protocol);   // Gibt das verwendete Protokoll aus (z. B. "https:")
+
+// history.back();                   // Geht eine Seite im Browserverlauf zurück (wie "Zurück"-Button)
+
+// location.assign("https://example.com");  
+// // Lädt eine neue Seite (kann im Verlauf zurückgehen)
+
+// location.replace("https://example.com");  
+// // Ersetzt die aktuelle Seite durch eine neue (kein Zurück möglich)
+// #############################################################
+// ⏳ setTimeout und setInterval
+
+// 🔹 Führt den Code einmal nach 3 Sekunden aus
+// setTimeout(function(){
+//   console.log('hello');
+// }, 3000);
+
+// 🔹 Speichert den Timeout in einer Variable, um ihn später abbrechen zu können
+// let hello = setTimeout(function(){
+//   console.log('hello');
+// }, 3000);
+
+// 🔹 Bricht den Timeout ab, bevor er ausgeführt wird
+// clearTimeout(hello);
+
+// 🔁 Wiederholt den Code jede Sekunde mit setInterval
+// let i = 0;
+// let hello = setInterval(function(){
+//     console.log(i++); // Gibt die Zahl aus und erhöht sie um 1
+//     if (i == 4) {     // Wenn i gleich 4 ist
+//         clearInterval(hello); // Stoppt das Intervall
+//     }
+// }, 1000); // Wiederhole alle 1000 Millisekunden (also 1 Sekunde)
+
+
+// #############################################################
+// localstorge and sessionstorage
+
+// localStorage.setItem('name', 'Sameh');
+// // localStorage.name= 'Sameh' => key
+// // console.log( localStorage.getItem('name'))
+// // console.log( localStorage.name)
+
+// localStorage.setItem('age', JSON.stringify(25))
+// // localStorage.setItem('age', JSON.stringify(25))
+// localStorage.setItem('skills', JSON.stringify([1,2,3,4]))
+// localStorage.user = JSON.stringify({
+//     name: 'Ali',
+//     age: 56,
+// })
+// // console.log(localStorage.getItem('age')
+// // console.log(localStorage.getItem('skills', JSON.stringify[1,2,3,4]))
+// // console.log(typeof localStorage.getItem('age'))
+// // console.log( JSON.parse(localStorage.getItem('skills')))
+// console.log( localStorage.key(1))
+
+// localStorage.removeItem('user')
+// localStorage.clear()
+
+// sessionstorage
+
+// let txt = document.getElementById('txt');
+
+// if (localStorage.length > 0) {
+//     txt.value = localStorage.getItem('txt');
+// }
+
+// txt.onkeyup = function() {
+//     localStorage.setItem('txt', txt.value);
+// }
+
+// let txt = document.getElementById('txt');
+
+// if (sessionStorage.length > 0) {
+//     txt.value = sessionStorage.getItem('txt');
+// }
+
+// txt.onkeyup = function() {
+//     sessionStorage.setItem('txt', txt.value);
+// }
+

@@ -4,9 +4,35 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
+
    <title>"JavaScript"</title>
+   <style>
+      <!-- body{
+         height: 800px;
+         width: 80%;
+         background: lightblue;
+      }
+      #btn{
+         width: 20px;
+         height: 20px;
+         border: none;
+         background: yellow;
+         position: fixed;
+         bottom: 10px;
+         right: 10px;
+         display: none;
+      } -->
+   </style>
+</head>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+   <meta charset="UTF-8">
+   <title>Nur Farbboxen aktiv</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
    <!-- <h1 id="head">Hallo World</h1> -->
    <!-- <h1 class="head">Hallo World</h1>
    <h1 class="head">Hallo World</h1>
@@ -29,20 +55,17 @@
       <h3>Hallo Ihr</h3>
    </div> -->
    <!-- <div id="container"></div> -->
-    <!-- <button onclick="console.log('hallo')">click</button>   -->
-     <!-- <button id="btn">Click</button> -->
-      <!-- <button id="btn">click</button> -->
-<!-- 
-      <input type="number" placeholder="USD" id="dollar">
-      <input type="number" placeholder="EGY" id="pound"> -->
-
-      <!-- <input type="text" name="" id="inp"> -->
-
-      <!-- <button id="after">after</button>
-      <button id="before">before</button>
-      <button id="inside">inside</button>
-      <p id="content">content</p>
-      <div id="container"></div> -->
+   <!-- <button onclick="console.log('hallo')">click</button>   -->
+   <!-- <button id="btn">Click</button> -->
+   <!-- <button id="btn">click</button> -->
+   <!-- <input type="number" placeholder="USD" id="dollar">
+   <input type="number" placeholder="EGY" id="pound"> -->
+   <!-- <input type="text" name="" id="inp"> -->
+   <!-- <button id="after">after</button>
+   <button id="before">before</button>
+   <button id="inside">inside</button>
+   <p id="content">content</p>
+   <div id="container"></div> -->
    <!-- <button id="open" class="hide">open</button>
    <button id="close">close</button>
    <div class="container">
@@ -57,14 +80,13 @@
    <!-- <h1 id="hallo">hallo</h1> -->
    <!-- <input id="txt" type="text" placeholder="open">
    <button id="btn">click</button> -->
-   <div class="gallery">
+   <!-- <div class="gallery">
       <div class="photos">
          <img onclick="haupt.src = this.src" src="images/1.jpg" alt="Bild 1">
          <img onclick="haupt.src = this.src" src="images/2.jpg" alt="Bild 2">
          <img onclick="haupt.src = this.src" src="images/3.jpg" alt="Bild 3">
          <img onclick="haupt.src = this.src" src="images/4.jpg" alt="Bild 4">
       </div>
-   
       <div class="main">
          <img src="images/4.jpg" name="haupt" alt="">
       </div>
@@ -74,10 +96,17 @@
          <img onmouseenter="haupt.src = this.src" src="images/3.jpg" alt="Bild 3">
          <img onmouseenter="haupt.src = this.src" src="images/4.jpg" alt="Bild 4">
       </div>
-   </div>
-   <script src="./Javascript/main.js">
-   
-   </script>
-   
+   </div> -->
+
+   <!-- ✅ Aktiv: Die letzten 4 Farbfelder -->
+   <div id="red"></div>
+   <div id="blue"></div>
+   <div id="yellow"></div>
+   <div id="black"></div>
+
+
+   <script src="main.js"></script>
 </body>
+</html>
+
 </html>

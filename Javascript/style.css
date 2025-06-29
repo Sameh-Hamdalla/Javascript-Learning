@@ -36,13 +36,13 @@ button{
     background: black;
 } */
 
-.photos img {
+/* .photos img {
     width: 200px;         /* العرض المناسب */
-    height: 200px;         /* يخلي الارتفاع يتناسب مع العرض */
+    /* height: 200px;         /* يخلي الارتفاع يتناسب مع العرض */
     border: 5px solid black;
     
 }
-.photos img:hover {
+/* .photos img:hover {
     cursor: pointer;
     border: 5px solid #080; 
 }
@@ -54,4 +54,26 @@ button{
 .main img:hover {
     cursor: pointer;
     border: 5px solid #080; 
+} */ */ */
+
+div {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#black {
+  background-color: black;
 }
